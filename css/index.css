@@ -1,0 +1,31 @@
+/*导航修改*/
+.brand{
+	height: 41px;
+	width: auto;
+}
+.navbar-header>a.navbar-brand{
+	padding: 4px 15px;
+}
+
+nav.navbar.navbar-default{
+	background: #232b2d;
+}
+#header>.navbar-nav>li,
+#header>.navbar-nav>li>a{
+	background: #232b2d;
+	color: #eee;
+}
+#header>.navbar-nav>li.active a,
+#header>.navbar-nav>li.hover a{
+	background:#2c3638;
+}
+/*主体部分修改*/
+.container{
+	position: relative;
+	top: -10px;
+}
+a,
+a:hover,
+a:focus{
+	text-decoration: none!important;
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>初级前端面试题目</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="css/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- logo -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+            	<img alt="Brand" src="imgs/logo.png" class="brand">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="header">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">初级面试题</a></li>
+                <li><a href="#">中级面试题</a></li>
+                <li><a href="#">高级面试题</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                </div>
+                <button type="submit" id="search" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!-- 内容 -->
+<div class="container">
+	<!-- 巨幕 -->
+	<div class="jumbotron">
+	    <h1>初级面试题</h1>
+	</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<!-- 1 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading1">
+			    <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+			          1.对WEB标准以及W3C的理解与认识
+			        </a>
+			    </h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+				<div class="panel-body">
+				    <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更 多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性</p>
+				</div>
+			</div>	  
+		</div>
+		<!-- 2 -->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading2">
+			    <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false"  aria-controls="collapse2">
+			          2.xhtml和html有什么区别
+			        </a>
+			    </h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+				<div class="panel-body">
+				     <p>html是超文本标记语言，xhtml是可扩展超文本标记语言，XML是可扩展标记语言</p>
+					 <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言</p>
+					 <p>最主要的不同：</p>
+				　　 <p>XHTML 元素必须被正确地嵌套。</p>
+				　　 <p>XHTML 元素必须被关闭。</p>
+				　　 <p>标签名必须用小写字母。</p>
+				　　 <p>XHTML 文档必须拥有根元素。</p>
+				</div>
+			</div>	 
+		</div>
+		<!-- 3 -->
+		<div class="panel panel-warning">
+		    <div class="panel-heading" role="tab" id="heading3">
+			    <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false"  aria-controls="collapse3">
+			          3.常见的行内元素有哪些?块级元素有哪些?
+			        </a>
+			    </h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+				<div class="panel-body">
+				    <p>块级：div , p  form, ul,  li , ol  address table hr</p>
+					<p>行内：span,   img ,  input,  label  textarea   strong,   em,  br button</p>
+				</div>
+			</div>
+		</div>	
+		<!-- 4 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading4">
+			    <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false"  aria-controls="collapse4">
+			          4.CSS引入的方式有哪些? link和@import的区别是?
+			        </a>
+			    </h4>
+			</div>
+			<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4"> 
+				<div class="panel-body">
+				  	<p>内嵌 内联 外链  导入</p>
+				  	<p>同时加载时，link无兼容性问题，@importCSS2.1以下浏览器不支持，Link 支持使用javascript改变样式，后者不可</p>
+				</div>
+			</div>	
+		</div>
+		<!-- 5 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading5">
+				    <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false"  aria-controls="collapse5">
+				          5.描述css reset的作用和用途
+				        </a>
+				    </h4>
+			</div>
+			<div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">   
+				<div class="panel-body">
+				  	<p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+				</div>
+			</div>	
+		</div>
+		<!-- 6 -->
+		<div class="panel panel-info">
+		    <div class="panel-heading" role="tab" id="heading6">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false"  aria-controls="collapse6">
+			          6.写出几种IE6 BUG的解决方法
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+		        <div class="panel-body">
+		            <p>双边距BUG float引起的 使用display</p>
+		            <p>3像素问题 使用float引起的 使用dislpay:inline -3px</p>
+		            <p>超链接hover 点击后失效 使用正确的书写顺序 link visited hover active</p>
+		            <p>Ie z-index问题 给父级添加position:relative</p>
+		            <p>Png 透明 使用js代码改</p>
+		            <p>Min-height 最小高度 !Important解决</p>
+		            <p>ie 6 不支持!important</p>
+		            <p>没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px)</p>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- 7 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading7">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false"  aria-controls="collapse7">
+			         7.解释css sprites，如何使用
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+				<div class="panel-body">
+				  	<p>Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量。</p>
+				  	<p>利用background-position来获取雪碧图中不同位置的图片，达到显示目的。</p>
+				</div>
+			</div>	
+		</div>
+		<!-- 8 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading8">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false"  aria-controls="collapse8">
+			         8.清除浮动的几种方式，各自的优缺点
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+				<div class="panel-body">
+				  	<p>1. 添加一个空div，利用css提供的clear:both清除浮动，让父级div能自动获取到高度，这个是在浮动块后添加一个空div其属性定为clear:both达到效果。</p>
+				  	<p>2. 定义一个.clearfix公共类，赋予{zoom:1}，可解决ie6,ie7浮动问题，在给其伪类：after如下属性{display:block;clear:both;content:"";visibility:hidden;height:0}，这个可以放在浮动元素的父元素上就可以了。</p>
+				  	<p>3.原理：浮动元素父元素必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度</p>
+				</div>
+			</div>
+		</div>
+		<!-- 9 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading9">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false"  aria-controls="collapse9">
+			         9.CSS3都有哪些新特性
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+				<div class="panel-body">
+				  	<p>1 选择器、 2 RGBA和透明度、3 多栏布局 、4 多背景图 、5 Word Wrap、 6 文字阴影 、7 @font-face属性 、8 圆角(边框半径) 、9 边框图片 、10 盒阴影 、11 盒子大小、12 媒体查询  、13 语音</p>
+				</div>
+			</div>
+		</div>
+		<!-- 10 -->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading10">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false"  aria-controls="collapse10">
+			         10.提升网页加载速度和网页性能的方法
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+				<div class="panel-body">
+				  	<p>１.减少http 请求， 网站建设中 过多的图片， css  script  flash 会增加 内容加载的请求负担， 因此建议 减少此类元素的使用， 使用css 合并图片 ，避免直接插入原图</p>
+				  	<p>2.  使用 gzip  压缩文档    增加网页加载速度，同时也可以降低网站的带宽流量的消耗</p>
+				  	<p>3. 设置合理的过期时间， 尽可能 减少cookie 体积 ，能够很好的提高页面的加载效率，对静态页组件的cookie 读取是一种资源的浪费</p>
+				  	<p>4. 减少图片的体积</p>
+				  	<p>5. 样式表文件放在外部调用，把页面中需要用到的javascript 和 css 样式表文件 放在另外的文件夹中，这样一来在打开网站其它页面时就会缓存这些调用的文件，从而加快网站页面的加载速度。</p>
+				  	<p>Min-height 最小高度 !Important解决</p>
+				  	<p>6、 减少域名dns 查找时间</p>
+				</div>
+			</div>
+		</div>
+		<!-- 11 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading11">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false"  aria-controls="collapse11">
+			         11.前端页面有哪三层构成，分别是什么?作用是什么?
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+				<div class="panel-body">
+				  	<p>分成：结构层、表示层、行为层。</p>
+				  	<p>结构层（structural layer）：由 HTML 或 XHTML之类的标记语言负责创建。标签，也就是那些出现在尖括号里的单词，对网页内容的语义含义做出了描述，但这些标签不包含任何关于如何显示有关内容的信息。例如，P标签表达了这样一种语义：“这是一个文本段。”</p>
+				  	<p>表示层（presentation layer）：由 CSS 负责创建。 CSS对“如何显示有关内容”的问题做出了回答。</p>
+				  	<p>行为层（behaviorlayer）：负责回答“内容应该如何对事件做出反应”这一问题。这是 Javascript 语言和 DOM主宰的领域</p>
+				</div>
+			</div>
+		</div>
+		<!-- 12 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading12">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false"  aria-controls="collapse12">
+			         12.在100*100容器内垂直水平居中一个不定宽高的图片
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+				<div class="panel-body">
+				  	<p>1. 使用display:table-cell，vertical-align，text-align，</p>
+				  	<p>2. 使用display:flex;justify-content:center;align-items:center</p>
+				  	<p>3. 使用line-height:100px;再对图片使用vertical-align:middle</p>
+				</div>
+			</div>
+		</div>
+		<!-- 13 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading13">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false"  aria-controls="collapse13">
+			         13.HTML5 中如何嵌入音频？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+				<div class="panel-body">
+				  	<p>当前，audio 元素支持三种音频格式：</p>
+				  	<img src="imgs/13.png" alt="">
+				  	<pre>
+						&lt;!-- control 属性供添加播放、暂停和音量控件 --&gt;
+						&lt;!-- audio 元素允许多个 source 元素。source 元素可以链接不同的音频文件。浏览器将使用第一个可识别的格式 --&gt; 
+						&lt;audio controls="controls"&gt;
+						      &lt;source src=&rdquo;jamshed.mp3″ type=&rdquo;audio/mpeg&rdquo;&gt;
+						      &lt;source src=&rdquo;jamshed.ogg″ type=&rdquo;audio/ogg&rdquo;&gt;
+						      Your browser does&rsquo;nt support audio embedding feature.
+						&lt;/audio&gt;
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- 14-->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading14">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false"  aria-controls="collapse14">
+			         14.HTML5 中如何嵌入视频？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+				<div class="panel-body">
+				  	<p>当前，video 元素支持三种视频格式：</p>
+				  	<img src="imgs/14.png" alt="">
+				  	<pre>
+					  	&lt;!-- 跟 audio 元素一样 --&gt;  
+						&lt;video width="320" height="240" controls="controls"&gt;      
+							&lt;source src="movie.ogg" type="video/ogg"&gt;      
+							&lt;source src="movie.mp4" type="video/mp4"&gt;      
+							Your browser does not support the video tag.  
+						&lt;/video&gt;
+					</pre>
+				</div>
+			</div>
+		</div>
+		<!-- 15 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading15">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false"  aria-controls="collapse15">
+			         15.除了 audio 和 vidio，HTML5还有哪些媒体标签？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+				<div class="panel-body">
+				  	<img src="imgs/15.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 16 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading16">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false"  aria-controls="collapse16">
+			         16.前端HTML5几种存储方式的总结
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+				<div class="panel-body">
+				  	<p>
+				  	详见下网址，内容很丰富。
+				  	<a href="http://blog.csdn.net/u013063153/article/details/52458348"><b>戳这戳这</b></a>
+				  	</p>
+				</div>
+			</div>
+		</div>
+		<!-- 17 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading17">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false"  aria-controls="collapse17">
+			         17.HTML5 canvas 元素有什么作用？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+				<div class="panel-body">
+				  	<p>用于在网页上绘制图形，该元素标签强大之处在于可以直接在 HTML5 上进行图形操作</p>
+				  	<img src="imgs/17.png" alt="">	
+				</div>
+			</div>
+		</div>
+		<!-- 18-->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading18">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false"  aria-controls="collapse14">
+			         18.HTML5 有哪些新增的表单元素？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+				<div class="panel-body">
+				  	<img src="imgs/18.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 19 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading19">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false"  aria-controls="collapse19">
+			         19.HTML5 标准提供了哪些新的API？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+				<div class="panel-body">
+				  	<p>1：canvas，不用多说，可以画出很多绚丽的图形，甚至可以直接做出伪3D游戏。</p>
+					<p>2：媒体控制，也很好理解(直译就是回放功能，假如只用html5.0以下的标签写，以前的音乐播放是不可能实现滚动条的。)</p>
+					<p>3：离线网页程序，可以把资源文件完全缓存在客户端，并且通过js的一些方法清空缓存</p>
+					<p>4：文档编辑，应该是更好的支持对文档的编辑。</p>
+					<p>5：拖动，可以将文件拖动到某些区域上传</p>
+					<p>6：跨文档请求，websocket，一种更加高效的通讯方式</p>
+					<p>7：历史管理，可以通过js管理和插入历史记录</p>
+					<p>8：MIME头自定义</p>
+					<p>9：客户端数据存储，localstoage sessionstoage</p>
+					<p>10：地理位置共享</p>
+					<p>11：本地数据库</p>
+					<p>12：索引数据库</p>
+				</div>
+			</div>
+		</div>
+		<!-- 20 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading20 ">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20 " aria-expanded="false"  aria-controls="collapse20 ">
+			         20 .HTML5 应用程序缓存和浏览器缓存有什么区别？
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse20 " class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20 ">
+				<div class="panel-body">
+				  	<img src="imgs/20.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 21 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading21">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false"  aria-controls="collapse21">
+			         21.行内元素有哪些？块级元素有哪些？空（void）元素有哪些？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
+				<div class="panel-body">
+				  	<p><strong>块级元素：</strong></p>
+					<p>　　address - 地址   　　　　</p>
+					<p>　　blockquote - 块引用   </p>
+					<p>　   center - 举中对齐块   </p>
+					<p>　　dir - 目录列表   </p>
+					<p>　　div - 常用块级容易，也是css layout的主要标签   </p>
+					<p>　　dl - 定义列表   </p>
+					<p>　　fieldset - form控制组   </p>
+					<p>　　form - 交互表单   </p>
+					<p>　　h1 - 大标题   </p>
+					<p>　　h2 - 副标题   </p>
+					<p>　　h3 - 3级标题   </p>
+					<p>　　h4 - 4级标题   </p>
+					<p>　　h5 - 5级标题   </p>
+					<p>　　h6 - 6级标题   </p>
+					<p>　　hr - 水平分隔线   </p>
+					<p>　　isindex - input prompt   </p>
+					<p>　　menu - 菜单列表   </p>
+					<p>　　noframes - frames可选内容，（对于不支持frame的浏览器显示此区块内容   </p>
+					<p>　　noscript - 可选脚本内容（对于不支持script的浏览器显示此内容）   </p>
+					<p>　　ol - 排序表单   </p>
+					<p>　　p - 段落   </p>
+					<p>　　pre - 格式化文本   </p>
+					<p>　　table - 表格   </p>
+					<p>　　ul - 非排序列表 <br>
+					</p>
+					<p><strong>行级元素：</strong></p>
+					<p>　　a - 锚点   </p>
+					<p>　　abbr - 缩写   </p>
+					<p>　　acronym - 首字   </p>
+					<p>　　b - 粗体(不推荐)   </p>
+					<p>　　bdo - bidi override   </p>
+					<p>　　big - 大字体   </p>
+					<p>　　br - 换行   </p>
+					<p>　　cite - 引用   </p>
+					<p>　　code - 计算机代码(在引用源码的时候需要)   </p>
+					<p>　　dfn - 定义字段   </p>
+					<p>　　em - 强调   </p>
+					<p>　　font - 字体设定(不推荐)   </p>
+					<p>　　i - 斜体   </p>
+					<p>　　img - 图片   </p>
+					<p>　　input - 输入框   </p>
+					<p>　　kbd - 定义键盘文本   </p>
+					<p>　　label - 表格标签   </p>
+					<p>　　q - 短引用   </p>
+					<p>　　s - 中划线(不推荐)   </p>
+					<p>　　samp - 定义范例计算机代码   </p>
+					<p>　　select - 项目选择   </p>
+					<p>　　small - 小字体文本   </p>
+					<p>　　span - 常用内联容器，定义文本内区块   </p>
+					<p>　　strike - 中划线   </p>
+					<p>　　strong - 粗体强调   </p>
+					<p>　　sub - 下标   </p>
+					<p>　　sup - 上标   </p>
+					<p>　　textarea - 多行文本输入框   </p>
+					<p>　　tt - 电传文本   </p>
+					<p>　　u - 下划线  </p>
+					<p>空元素，没有内容的 HTML 元素被称为空元素： <br>
+					</p>
+					<p>　　&lt;br&gt; - 定义换行</p>
+					<p>　　&lt;hr&gt; - 分割线<br>
+					</p>
+					<p>　　&lt;img&gt;</p>
+					<p>　　&lt;input&gt;</p>
+				</div>
+			</div>
+		</div>
+		<!-- 22-->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading22">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false"  aria-controls="collapse22">
+			         22.浏览器的内核分别是什么？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+				<div class="panel-body">
+				  	<img src="imgs/22.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 23 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading23">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false"  aria-controls="collapse23">
+			         23.请实现，鼠标点击页面中的任意标签，alert 该标签的名称（注意兼容性）
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+				<div class="panel-body">
+				  	<img src="imgs/23.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 24 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading24">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false"  aria-controls="collapse24">
+			         24.用js写个原生的ajax过程
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading24">
+				<div class="panel-body">
+					<img src="imgs/24.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 25 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading25">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse25" aria-expanded="false"  aria-controls="collapse25">
+			         25.请给出异步加载js方案，不少于两种。
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading25">
+				<div class="panel-body">
+					<img src="imgs/25-1.png" alt="">
+				  	<img src="imgs/25-2.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 26-->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading26">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse26" aria-expanded="false"  aria-controls="collapse26">
+			         26.请写出jquery绑定事件的方法，不少于两种。
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading26">
+				<div class="panel-body">
+				  	<img src="imgs/26.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 27 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading27">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse27" aria-expanded="false"  aria-controls="collapse27">
+			         27.40个重要的HTML5面试题及答案
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading27">
+				<div class="panel-body">
+				  	<a href="http://udn.yyuap.com/thread-16749-1-1.html">问题比较多，请进入</a>
+				</div>
+			</div>
+		</div>
+		<!-- 28 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading28">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse28" aria-expanded="false"  aria-controls="collapse28">
+			         28.前端HTML5几种存储方式的总结
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading28">
+				<div class="panel-body">
+				  	<p>
+				  	详见下网址，内容很丰富。
+				  	<a href="http://blog.csdn.net/u013063153/article/details/52458348"><b>戳这戳这</b></a>
+				  	</p>
+				</div>
+			</div>
+		</div>
+		<!-- 29 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading29">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse29" aria-expanded="false"  aria-controls="collapse29">
+			         29.CSS3有哪些新特性？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading29">
+				<div class="panel-body">
+					<p>1. CSS3实现圆角（border-radius），阴影（box-shadow），</p>
+					<p>2. 对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）</p>
+					<p>3.transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);// 旋转,缩放,定位,倾斜</p>
+					<p>4. 增加了更多的CSS选择器  多背景 rgba</p>
+					<p>5. 在CSS3中唯一引入的伪元素是 ::selection.</p>
+					<p>6. 媒体查询，多栏布局</p>
+					<p>7. border-image</p>
+				</div>
+			</div>
+		</div>
+		<!-- 30-->
+		<div class="panel panel-info">
+			<div class="panel-heading" role="tab" id="heading30">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse30" aria-expanded="false"  aria-controls="collapse30">
+			         30.CSS3新增伪类有那些？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading30">
+				<div class="panel-body">
+				  	<p>   p:first-of-type 选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+					<p>    p:last-of-type  选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+					<p>    p:only-of-type  选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+					<p>    p:only-child    选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。</p>
+					<p>    p:nth-child(2)  选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。</p>
+					<p>    :enabled、:disabled 控制表单控件的禁用状态。</p>
+					<p>    :checked，单选框或复选框被选中。</p>
+				</div>
+			</div>
+		</div>
+		<!-- 31 -->
+		<div class="panel panel-warning">
+			<div class="panel-heading" role="tab" id="heading31">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse31" aria-expanded="false"  aria-controls="collapse31">
+			         31.你能描述一下渐进增强和优雅降级之间的不同吗?
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading31">
+				<div class="panel-body">
+				  	<p>渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</p>
+					<p>优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</p>
+					<p>　　区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。　</p>
+					<p>　　&ldquo;优雅降级&rdquo;观点</p>
+					<p>　　&ldquo;优雅降级&rdquo;观点认为应该针对那些最高级、最完善的浏览器来设计网站。而将那些被认为&ldquo;过时&rdquo;或有功能缺失的浏览器下的测试工作安排在开发周期的最后阶段，并把测试对象限定为主流浏览器（如 IE、Mozilla 等）的前一个版本。</p>
+					<p>　　在这种设计范例下，旧版的浏览器被认为仅能提供&ldquo;简陋却无妨 (poor, but passable)&rdquo; 的浏览体验。你可以做一些小的调整来适应某个特定的浏览器。但由于它们并非我们所关注的焦点，因此除了修复较大的错误之外，其它的差异将被直接忽略。</p>
+					<p>　　&ldquo;渐进增强&rdquo;观点</p>
+					<p>　　&ldquo;渐进增强&rdquo;观点则认为应关注于内容本身。</p>
+					<p>　　内容是我们建立网站的诱因。有的网站展示它，有的则收集它，有的寻求，有的操作，还有的网站甚至会包含以上的种种，但相同点是它们全都涉及到内容。这使得&ldquo;渐进增强&rdquo;成为一种更为合理的设计范例。这也是它立即被 Yahoo! 所采纳并用以构建其&ldquo;分级式浏览器支持 (Graded Browser Support)&rdquo;策略的原因所在。</p>
+				</div>
+			</div>
+		</div>
+		<!-- 32 -->
+		<div class="panel panel-danger">
+			<div class="panel-heading" role="tab" id="heading32">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse32" aria-expanded="false"  aria-controls="collapse32">
+			         32.知道css有个content属性吗？有什么作用？有什么应用？
+			        </a>
+			    </h4>
+		    </div>
+			<div id="collapse32" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading32">
+				<div class="panel-body">
+				  	<p>知道。css的content属性专门应用在 before/after 伪元素上，用来插入生成内容。最常见的应用是利用伪类清除浮动。</p>
+					<p>//一种常见利用伪类清除浮动的代码</p>
+					<p>.clearfix:after {</p>
+					<p>    content:"."; //这里利用到了content属性</p>
+					<p>    display:block;</p>
+					<p>    height:0;</p>
+					<p>    visibility:hidden;</p>
+					<p>    clear:both; }</p>
+					<p>.clearfix {</p>
+					<p>    *zoom:1;</p>
+					<p>}</p>
+					<p>after伪元素通过 content 在元素的后面生成了内容为一个点的块级素，再利用clear:both清除浮动。</p>
+				</div>
+			</div>
+		</div>
+		<!-- 33 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading33">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse33" aria-expanded="false"  aria-controls="collapse33">
+			         33.知道css计数器（序列数字字符自动递增）吗？如何通过css content属性实现css计数器？
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading33">
+				<div class="panel-body">
+					<p>css计数器是通过设置counter-reset 、counter-increment 两个属性 、及 counter()/counters()一个方法配合after / before 伪类实现。 </p>
+					<a href="http://www.zhangxinxu.com/wordpress/2014/08/css-counters-automatic-number-content/">详情请戳这</a>
+				</div>
+			</div>
+		</div>
+		<!-- 34 -->
+		<div class="panel panel-success">
+			<div class="panel-heading" role="tab" id="heading34">
+		        <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse34" aria-expanded="false"  aria-controls="collapse34">
+			         34.script标签中defer和async属性的区别
+			        </a>
+			    </h4>
+		    </div>
+		    <div id="collapse34" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading34">
+				<div class="panel-body">
+					<p>向html页面中插入javascript代码的主要方法就是通过script标签。其中包括两种形式，第一种直接在script标签之间插入js代码，第二种即是通过src属性引入外部js文件。由于解释器在解析执行js代码期间会阻塞页面其余部分的渲染，对于存在大量js代码的页面来说会导致浏览器出现长时间的空白和延迟，为了避免这个问题，建议把全部的js引用放在&lt;/body&gt;标签之前。
+				<p>　　script标签存在两个属性，defer和async，因此script标签的使用分为三种情况：</p>
+				<p>　　1.&lt;script src=&quot;example.js&quot;&gt;&lt;/script&gt;</p>
+				<p>　　　没有defer或async属性，浏览器会立即加载并执行相应的脚本。也就是说在渲染script标签之后的文档之前，不等待后续加载的文档元素，读到就开始加载和执行，此举会阻塞后续文档的加载；</p>
+				<p>　　2.&lt;script async src=&quot;example.js&quot;&gt;&lt;/script&gt;</p>
+				<p>　　   有了async属性，表示后续文档的加载和渲染与js脚本的加载和执行是并行进行的，即异步执行；</p>
+				<p>　　3.&lt;script defer src=&quot;example.js&quot;&gt;&lt;/script&gt;</p>
+				<p>         有了defer属性，加载后续文档的过程和js脚本的加载(此时仅加载不执行)是并行进行的(异步)，js脚本的执行需要等到文档所有元素解析完成之后，DOMContentLoaded事件触发执行之前。</p>
+				<img src="imgs/34.png" alt="">
+				<p>其中蓝色代表js脚本网络加载时间，红色代表js脚本执行时间，绿色代表html解析。</p>
+				<p>　　从图中我们可以明确一下几点：</p>
+				<p>　　1.defer和async在网络加载过程是一致的，都是异步执行的；</p>
+				<p>　　2.两者的区别在于脚本加载完成之后何时执行，可以看出defer更符合大多数场景对应用脚本加载和执行的要求；</p>
+				<p>　　3.如果存在多个有defer属性的脚本，那么它们是按照加载顺序执行脚本的；而对于async，它的加载和执行是紧紧挨着的，无论声明顺序如何，只要加载完成就立刻执行，它对于应用脚本用处不大，因为它完全不考虑依赖。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+		$("#search").click(function () {
+			alert("还不会写。。后续学了再补充")
+		})
+	</script>
+</body>
+</html>
